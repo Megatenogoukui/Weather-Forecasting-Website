@@ -1,0 +1,36 @@
+
+    <%- include("header.ejs") %>
+
+    <div id="card">
+        <div class="info">
+            <form id="myForm" method="post">
+                <label for="locationInput" class="loco">Location : </label>
+                <input type="text" name="location" id="locationInput" style="padding-left:30px; font-size: 1.2vw;">
+                <button formaction="/search" id="search"><i class="fa-solid fa-magnifying-glass searching"></i></button>
+            </form>
+
+            <% if (locals.loca){ %>
+                <div class="card1">
+                    <h5><%= loca %></h5>    
+                    <h4> <%= temp %></h4>
+                    <h6> <%= des  %></h6>
+                </div>
+                <div class="grid-container">
+                    <div class="gridItem1">
+                        <h6>Humidity : <%= hum %></h6>
+                    </div>
+                    <div class="gridItem2">
+                        <img src="download.jpg" alt="No image" width="100px" height="100px">
+                    </div>
+                    <div class="gridItem3">
+                        <h6>Wind : <%= wind %></h6>
+                    </div>
+                    
+                </div>
+            <% } %>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #C6C5FD;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 0 !important;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a{
+    color: #fff !important;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s ;
+}
+.navbar-brand{
+    color: #fff !important;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.info{
+    
+    padding: 4vh 4vw;
+    background: #fff;
+    border-radius: 20px;
+}
+#search{
+    margin-left: 2vw;
+    background: transparent;
+    border:1px solid #bdb2b2;   
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) ,0.5s;
+    color: #434343;
+}
+#search:hover{
+    background-color: #9C9DDE;
+    color: #fff;
+
+}
+#locationInput{
+    border-radius: 20px;
+    border: 1px solid #bdb2b2;
+    height: 4vh;
+    width: 15vw;
+}
+.loco{
+    font-size: 1.5vw;
+    color: #434343;
+    font-weight: 500;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 4vh 0;
+}
+.card1 h5{
+    font-size: 3vw;
+    font-weight: 100;
+    color: #434343;
+    letter-spacing: 4px;
+}
+.card1 h4{
+    font-size: 5vw;
+    font-weight: 100;
+    color: #434343;
+    letter-spacing: 2px;
+}
+.card1 h6{
+    font-size: 1.4vw;
+    font-weight: 100;
+    color: #434343;
+    letter-spacing: 2px;
+}
+.grid-container{
+    display: grid;
+  grid-template-columns: auto auto ;
+  gap: 10px;
+}
+.gridItem2{
+    grid-column-start: 2 ;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: end;
+}
+.gridItem1 h6{
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #434343;
+    letter-spacing: 1px;
+}
+.gridItem3 h6{
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #434343;
+    letter-spacing: 1px;
+}
